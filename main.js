@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.open("http://www.joeylau.nl", "_blank");
     }
     function music() {
-        window.open(`https://www.youtube.com/watch?v=J_CFBjAyPWE&shuffle=${Math.floor(Math.random() * 100)}&list=PLL_i49YplGU2ZTUGyAo0aBe1NOoFZ-rVk`, "_blank");
+        window.open(`https://www.youtube.com/watch?v=nv1kyKgO17E&shuffle=${Math.floor(Math.random() * 100)}&list=PLL_i49YplGU2ZTUGyAo0aBe1NOoFZ-rVk`, "_blank");
     }
 });
