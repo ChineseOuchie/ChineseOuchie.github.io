@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
         annyang.trigger('test');
     });
     test2.addEventListener('click', function () {
-        annyang.trigger('wast');
+        annyang.trigger('music');
     });
     //debug
     annyang.debug([newState=true]);
     if (annyang) {
         const commands = {
-            'test': teste,
+            'test': test,
             'Play music': music
         };
         // Add our commands to annyang
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     //functions
-    function teste() {
+    function test() {
         // console.log('ok');
         window.open("http://www.joeylau.nl", "_blank");
     }
