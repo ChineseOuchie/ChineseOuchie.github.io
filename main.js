@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         annyang.trigger('test');
     });
     test2.addEventListener('click', function () {
-        annyang.trigger('music');
+        annyang.trigger('Play music');
     });
     //debug
     annyang.debug([newState=true]);
