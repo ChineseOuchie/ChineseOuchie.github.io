@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     annyang.debug([newState=true]);
     if (annyang) {
         const commands = {
-            'test': test,
+            'test': website,
             'Play music': music
         };
         // Add our commands to annyang
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     //functions
-    function test() {
+    function website() {
         // console.log('ok');
         window.open("http://www.joeylau.nl", "_blank");
     }
