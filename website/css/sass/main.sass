@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Work+Sans');
+    
+
+// font-family: 'Work Sans', sans-serif;
+// font-family: 'Lora', serif;
+@mixin laptop
+    @media only screen and (max-width: 1024px)
+        @content
+@mixin tablet
+    @media only screen and (max-width: 768px)
+        @content
+@mixin phone
+    @media only screen and (max-width: 480px)
+        @content
+header
+    // height: 400px
+    #mainHeader
+        min-height: 130px
+        text-align: center
+        nav
+            display: flex
+            font-family: 'Work Sans', sans-serif
+            font-weight: bold
+            font-size: 20px
+            padding-left: 300px
+            padding-right: 300px
+            img
+                height: 160px
+            #mainNav
+                display: block
+                align-self: center
+                width: 100%
+                text-align: right
+            ul
+                display: block
+                li
+                    display: inline-block  
+                    width: 130px
+                    text-align: center
+            #navBtn
+                button
+                    display: none
+.navToggle
+    display: block !important
+@include laptop
+    header
+        #mainHeader
+            nav
+                padding-left: 40px
+                padding-right: 40px
+@include tablet
+    header
+        #mainHeader
+            nav
+                position: relative
+                padding: 0
+                img
+                    padding-left: 20px
+                #mainNav
+                    display: none
+                    position: absolute
+                    top: 160px
+                    ul
+                        li
+                            display: block
+                            width: 100%
+                            padding: 37px 0
+                #navBtn
+                    display: flex
+                    justify-content: flex-end
+                    width: 100%
+                    padding-right: 20px
+                    button
+                        display: inline-block
+                        align-self: center
+                        height: 60px
+                        border: none
+                        background-color: white
+                        cursor: pointer
+                        #hamburger
+                            div
+                                width: 35px;
+                                height: 5px;
+                                background-color: black;
+                                margin: 6px 0;
+@include phone
+    header
+        #mainHeader
+            nav
+            
