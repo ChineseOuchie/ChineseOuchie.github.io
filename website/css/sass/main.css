@@ -1,7 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Work+Sans");
 header #mainHeader {
   min-height: 130px;
-  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+header #mainHeader #navBanner {
+  position: relative;
+  display: inline-block;
+}
+
+header #mainHeader #navBanner img {
+  height: 160px;
+}
+
+header #mainHeader #navBanner #navBtn {
+  display: inline-block;
+  float: right;
+}
+
+header #mainHeader #navBanner #navBtn button {
+  display: none;
 }
 
 header #mainHeader nav {
@@ -11,25 +30,24 @@ header #mainHeader nav {
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
   font-size: 20px;
-  padding-left: 300px;
-  padding-right: 300px;
-}
-
-header #mainHeader nav img {
   height: 160px;
+  float: right;
 }
 
 header #mainHeader nav #mainNav {
-  display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 100%;
-  text-align: right;
 }
 
 header #mainHeader nav ul {
   display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header #mainHeader nav ul li {
@@ -38,64 +56,72 @@ header #mainHeader nav ul li {
   text-align: center;
 }
 
-header #mainHeader nav #navBtn button {
-  display: none;
-}
-
 .navToggle {
   display: block !important;
 }
 
-@media only screen and (max-width: 1024px) {
-  header #mainHeader nav {
+@media only screen and (max-width: 1450px) {
+  header #mainHeader {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  header #mainHeader nav {
-    position: relative;
-    padding: 0;
+  header #mainHeader #navBanner {
+    width: 100%;
   }
-  header #mainHeader nav img {
+  header #mainHeader #navBanner img {
     padding-left: 20px;
+  }
+  header #mainHeader #navBanner #navBtn {
+    display: inline-block;
+  }
+  header #mainHeader #navBanner #navBtn button {
+    display: inline-block;
+    float: right;
+    height: 160px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  header #mainHeader #navBanner #navBtn buttontarget {
+    border: none;
+  }
+  header #mainHeader #navBanner #navBtn button #hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  header #mainHeader nav {
+    width: auto;
+    float: none;
+    height: auto;
+    margin: 0 -40px;
   }
   header #mainHeader nav #mainNav {
     display: none;
-    position: absolute;
-    top: 160px;
+    width: 100%;
   }
   header #mainHeader nav #mainNav ul li {
     display: block;
     width: 100%;
     padding: 37px 0;
+    background-color: #F1EADF;
   }
-  header #mainHeader nav #navBtn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 100%;
-    padding-right: 20px;
-  }
-  header #mainHeader nav #navBtn button {
-    display: inline-block;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    height: 60px;
-    border: none;
-    background-color: white;
+  header #mainHeader nav #mainNav ul li:hover {
+    background-color: #353538;
+    color: white;
     cursor: pointer;
   }
-  header #mainHeader nav #navBtn button #hamburger div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+}
+
+@media only screen and (max-width: 480px) {
+  header #mainHeader {
+    padding-left: 0;
+    padding-right: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
