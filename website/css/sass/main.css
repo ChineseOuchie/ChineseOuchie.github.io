@@ -60,14 +60,75 @@ header #mainHeader nav ul li {
   display: block !important;
 }
 
+#banner {
+  font-family: 'Work Sans', sans-serif;
+  position: relative;
+}
+
+#banner #bannerContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 149px 0 299px;
+}
+
+#banner #bannerContent #bannerTxt {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#banner #bannerContent #bannerTxt #mainTitle {
+  background: rgba(235, 240, 246, 0.85);
+  display: inline-block;
+  padding: 30px 50px;
+}
+
+#banner #bannerContent #bannerTxt #mainTitle h1 {
+  font-size: 28px;
+  color: #363639;
+  display: inline;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#banner #bannerContent #bannerTxt #secondaryTitle h2 {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #363639;
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  padding: 25px 35px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+#banner #bannerImgContainer #bannerImg {
+  background-image: url("../../img/0002.JPG");
+  background-size: cover;
+  background-position: center bottom 20%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 @media only screen and (max-width: 1450px) {
   header #mainHeader {
     padding-left: 40px;
     padding-right: 40px;
   }
+  #banner #bannerContent {
+    padding: 106px 0 229px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 934px) {
   header #mainHeader #navBanner {
     width: 100%;
   }
@@ -115,6 +176,9 @@ header #mainHeader nav ul li {
     background-color: #353538;
     color: white;
     cursor: pointer;
+  }
+  #banner #bannerContent {
+    padding: 72px 0;
   }
 }
 
