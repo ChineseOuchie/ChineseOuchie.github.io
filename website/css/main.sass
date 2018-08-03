@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Work+Sans')
+    
+
+// font-family: 'Work Sans', sans-serif
+// font-family: 'Lora', serif
+// @mixin laptop
+//     @media only screen and (max-width: 1024px)
+//         @content
+@mixin laptop
+    @media only screen and (max-width: 1450px)
+        @content
+@mixin tablet
+    @media only screen and (max-width: 934px)
+        @content
+@mixin phone
+    @media only screen and (max-width: 480px)
+        @content
+body
+    box-sizing: border-box
+header
+    // height: 400px
+    #mainHeader
+        min-height: 130px
+        padding-left: 300px
+        padding-right: 300px
+        // text-align: center
+        #navBanner
+            // width: 100%
+            position: relative
+            display: inline-block
+            img
+                height: 160px
+            #navBtn
+                display: inline-block
+                float: right
+                button
+                    display: none
+        nav
+            display: flex
+            font-family: 'Work Sans', sans-serif
+            font-weight: bold
+            font-size: 20px
+            height: 160px
+            float: right
+            #mainNav
+                // display: block
+                align-self: center
+            ul
+                display: block
+                float: left
+                position: relative
+                width: 100%
+                align-items: center
+                li
+                    display: inline-block  
+                    width: 130px
+                    text-align: center         
+.navToggle
+    display: block !important
+.important
+    // display: block
+    font-weight: bold
+.btn
+    display: block
+    width: 150px
+    text-align: center
+    background: #363639
+    color: #fff
+    font-family: 'Work Sans', sans-serif
+    font-size: 14px
+    font-weight: 700
+    line-height: 58px
+    padding: 0 47px
+    text-transform: uppercase
+
+#banner
+    font-family: 'Work Sans', sans-serif
+    position: relative
+    #bannerContent
+        position: relative
+        z-index: 1
+        text-align: center
+        padding: 149px 0 299px
+        #bannerTxt
+            // width: 100%
+            margin: 0 auto
+            padding-left: 40px
+            padding-right: 40px
+            #mainTitle
+                background: rgba(235,240,246,0.85)
+                display: inline-block
+                padding: 30px 50px
+                h1
+                    font-size: 28px
+                    color: #363639
+                    display: inline
+                    letter-spacing: 0.1em
+                    font-weight: 900
+                    text-transform: uppercase
+            #secondaryTitle
+                h2
+                    background: #fff
+                    border: 2px solid #fff
+                    color: #363639
+                    display: inline-block
+                    font-family: 'Work Sans', sans-serif
+                    font-size: 14px
+                    font-weight: 700
+                    letter-spacing: 0.1em
+                    line-height: 1
+                    padding: 25px 35px
+                    margin-top: 20px
+                    text-transform: uppercase
+    #bannerImgContainer
+        #bannerImg
+            background-image: url("../img/0002.JPG")
+            background-size: cover
+            background-position: center bottom 20%
+            height: 100%
+            width: 100%
+            position: absolute
+            top: 0
+#content
+    font-family: 'Lora', serif
+    font-size: 18px
+    color: #7e7e80
+    #intro
+        display: flex
+        background-color: #F2EBE0
+        // height: 800px
+        padding: 50px 300px 45px
+        #introInfo
+            flex: 1
+            letter-spacing: 0.05em
+            line-height: 26px
+            margin-right: 40px
+            h2
+                font-family: 'Work Sans', serif
+                color: #363639
+                font-weight: 800
+                font-size: 40px
+                text-transform: uppercase
+                line-height: 34px
+            p
+                margin: 30px 0
+                    
+            
+        #introImg
+            flex: 1
+            text-align: center
+            img
+                max-width: 100%
+    #openingTime
+        // height: 800px
+        padding: 50px 300px 45px
+        #timeTitle
+        #row
+            display: flex
+            flex-wrap: wrap
+            .timeItem
+                flex: 1
+                border: 1px solid black
+                padding: 32px 0
+                text-align: center
+                padding-left: 10px
+                padding-right: 10px
+                .date
+                    color: #363639
+                    display: block
+                    font-weight: 700
+                    font-family: 'Work Sans', sans-serif
+                    letter-spacing: 0.1em
+                    padding-bottom: 6px
+                    text-transform: uppercase
+                .hour
+                    font-weight: 700
+                    font-family: 'Work Sans', sans-serif
+                .timeExtraInfo
+                    font-size: 16px
+                    padding-bottom: 5px
+                    padding-top: 5px
+
+        #timeFooter
+@include laptop
+    header
+        #mainHeader
+            padding-left: 40px
+            padding-right: 40px
+    #banner
+        #bannerContent
+            padding: 106px 0 229px
+    #content
+        #intro
+            padding: 50px 40px 45px
+            #introInfo
+                margin-right: 40px
+                p
+                    margin: 10px 0
+            #introImg
+                flex: 1
+                text-align: center
+                img
+                    max-width: 100%
+        #openingTime
+            padding: 50px 40px 45px
+            text-align: center
+
+            
+    
+@include tablet
+    header
+        #mainHeader
+            #navBanner
+                width: 100%
+                img
+                    padding-left: 20px
+                #navBtn
+                    display: inline-block
+                    button
+                        display: inline-block
+                        float: right
+                        height: 160px
+                        border: none
+                        background-color: white
+                        cursor: pointer
+                        outline: none
+                        &target
+                            border: none
+                        #hamburger
+                            div
+                                width: 35px
+                                height: 5px
+                                background-color: black
+                                margin: 6px 0
+            nav
+                width: auto
+                float: none
+                height: auto
+                margin: 0 -40px
+                #mainNav
+                    display: none
+                    width: 100%
+                    ul
+                        li
+                            display: block
+                            width: 100%
+                            padding: 37px 0
+                            background-color: #F1EADF
+                            &:hover
+                                background-color: #353538
+                                color: white
+                                cursor: pointer
+    #banner
+        #bannerContent
+            padding: 72px 0
+    #openingTime
+        padding: 50px 40px 45px
+        #timeTitle
+        #row
+            display: block !important
+    
+@include phone
+    header
+        #mainHeader
+            padding-left: 0
+            padding-right: 20px
+    #banner
+        #bannerContent
+            #bannerTxt
+                padding: 0
+                #mainTitle
+                    padding: 30px 0
+    #content
+        padding-left: 0
+        margin: 0
+        #intro
+            padding-left: 10px
+            padding-right: 10px
+            #introInfo
+                padding-left: 0
+                padding-right: 0
+                margin: 0
+                h2
+                    font-size: 30px
+                    line-height: 30px
+            #introImg
+                display: none
+        #openingTime
+            padding-left: 10px
+            padding-right: 10px
+    .btn
+        width: auto
