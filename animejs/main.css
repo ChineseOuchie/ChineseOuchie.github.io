@@ -1,0 +1,15 @@
+div{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	margin-top: 100px;
+}
+.item2{
+	background-color: blue;
+}
+.item3{
+	background-color: black;
+}
+input{
+	width: 400px;
+}
